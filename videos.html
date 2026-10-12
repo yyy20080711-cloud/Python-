@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视频馆 | CrawlLab</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo-dot"></span>CrawlLab</div>
+    <nav class="nav">
+      <a href="/index.html">首页</a>
+      <a href="/photos.html">照片墙</a>
+      <a class="active" href="/videos.html">视频馆</a>
+      <a href="/audio.html">音乐库</a>
+      <a href="/api/media.json">JSON 接口</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Video Lab</div>
+    <h1>短视频批量下载练习</h1>
+    <p class="lead">F12 选 <code>video.crawl-video</code> 或内部 <code>source</code> 的 src。文件不大，适合练 requests 流式保存。</p>
+  </section>
+
+  <section class="section">
+    <div class="video-grid" id="video-list">
+      <article class="media-card video-card" data-type="video" data-id="v01">
+        <video class="crawl-video" controls preload="metadata" poster="/media/images/photo-05.jpg">
+          <source src="/media/videos/flower.mp4" type="video/mp4">
+        </video>
+        <div class="card-body">
+          <h3 class="video-title">CC0 花朵特写</h3>
+          <div class="meta"><span>MP4</span><span>flower.mp4</span></div>
+          <div class="card-actions">
+            <a class="download-link video-download" href="/media/videos/flower.mp4" download="flower.mp4">下载视频</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="media-card video-card" data-type="video" data-id="v02">
+        <video class="crawl-video" controls preload="metadata">
+          <source src="/media/videos/flower.webm" type="video/webm">
+        </video>
+        <div class="card-body">
+          <h3 class="video-title">花朵 WebM</h3>
+          <div class="meta"><span>WEBM</span><span>flower.webm</span></div>
+          <div class="card-actions">
+            <a class="download-link video-download" href="/media/videos/flower.webm" download="flower.webm">下载视频</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="media-card video-card" data-type="video" data-id="v03">
+        <video class="crawl-video" controls preload="metadata">
+          <source src="/media/videos/rabbit.mp4" type="video/mp4">
+        </video>
+        <div class="card-body">
+          <h3 class="video-title">兔子短片 MP4</h3>
+          <div class="meta"><span>MP4</span><span>rabbit.mp4</span></div>
+          <div class="card-actions">
+            <a class="download-link video-download" href="/media/videos/rabbit.mp4" download="rabbit.mp4">下载视频</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="media-card video-card" data-type="video" data-id="v04">
+        <video class="crawl-video" controls preload="metadata">
+          <source src="/media/videos/rabbit.webm" type="video/webm">
+        </video>
+        <div class="card-body">
+          <h3 class="video-title">兔子短片 WebM</h3>
+          <div class="meta"><span>WEBM</span><span>rabbit.webm</span></div>
+          <div class="card-actions">
+            <a class="download-link video-download" href="/media/videos/rabbit.webm" download="rabbit.webm">下载视频</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="media-card video-card" data-type="video" data-id="v05">
+        <video class="crawl-video" controls preload="metadata">
+          <source src="/media/videos/sample-5s.mp4" type="video/mp4">
+        </video>
+        <div class="card-body">
+          <h3 class="video-title">5 秒测试片</h3>
+          <div class="meta"><span>MP4</span><span>sample-5s.mp4</span></div>
+          <div class="card-actions">
+            <a class="download-link video-download" href="/media/videos/sample-5s.mp4" download="sample-5s.mp4">下载视频</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">选择器练习：document.querySelectorAll('a.video-download')</footer>
+</body>
+</html>

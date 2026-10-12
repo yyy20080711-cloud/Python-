@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrawlLab | Python 爬虫练习站</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo-dot"></span>
+      CrawlLab
+    </div>
+    <nav class="nav">
+      <a class="active" href="/index.html">首页</a>
+      <a href="/photos.html">照片墙</a>
+      <a href="/videos.html">视频馆</a>
+      <a href="/audio.html">音乐库</a>
+      <a href="/api/media.json">JSON 接口</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Python Crawler Playground</div>
+    <h1>给爬虫练习用的多媒体测试站</h1>
+    <p class="lead">
+      打开浏览器 F12，用 class、id、data-* 选择器批量抓取照片、视频和音频。
+      本站素材仅用于本地学习，请勿用于未授权站点。
+    </p>
+    <div class="stats">
+      <article class="stat-card">
+        <strong id="photo-count">12</strong>
+        <span>可下载照片</span>
+      </article>
+      <article class="stat-card">
+        <strong id="video-count">5</strong>
+        <span>测试视频</span>
+      </article>
+      <article class="stat-card">
+        <strong id="audio-count">9</strong>
+        <span>音频文件</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="practice">
+    <div class="section-head">
+      <div>
+        <div class="kicker">F12 练习提示</div>
+        <h2>常用选择器</h2>
+      </div>
+    </div>
+    <div class="selector-panel">
+      <div class="selector-box">
+        <h3>建议在 Elements 面板试这些</h3>
+        <ul>
+          <li>img.crawl-image</li>
+          <li>a.photo-download</li>
+          <li>video.crawl-video source</li>
+          <li>audio.crawl-audio</li>
+          <li>table.resource-table a[href]</li>
+          <li>[data-type="photo"]</li>
+        </ul>
+      </div>
+      <div class="hint-card">
+        <h3>练习目标</h3>
+        <p class="lead">
+          先复制一个元素的 CSS 选择器，再用 Python 的 requests + BeautifulSoup
+          批量下载同类型资源。JSON 接口适合练接口解析。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="photos-preview">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Photos</div>
+        <h2>照片预览</h2>
+      </div>
+      <a class="btn btn-primary" href="/photos.html">进入照片墙</a>
+    </div>
+    <div class="grid" id="photo-grid">
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p01">
+        <img class="thumb crawl-image" src="/media/images/photo-01.jpg" alt="高山河流" data-filename="photo-01.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">高山河流</h3>
+          <div class="meta"><span>nature</span><span>JPG</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-01.jpg" download="photo-01.jpg">下载</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p02">
+        <img class="thumb crawl-image" src="/media/images/photo-02.jpg" alt="云上公路" data-filename="photo-02.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">云上公路</h3>
+          <div class="meta"><span>nature</span><span>JPG</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-02.jpg" download="photo-02.jpg">下载</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="animal" data-id="p03">
+        <img class="thumb crawl-image" src="/media/images/photo-03.jpg" alt="午后小狗" data-filename="photo-03.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">午后小狗</h3>
+          <div class="meta"><span>animal</span><span>JPG</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-03.jpg" download="photo-03.jpg">下载</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p04">
+        <img class="thumb crawl-image" src="/media/images/photo-04.jpg" alt="森林瀑布" data-filename="photo-04.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">森林瀑布</h3>
+          <div class="meta"><span>nature</span><span>JPG</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-04.jpg" download="photo-04.jpg">下载</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    CrawlLab 仅供 Python 爬虫学习测试。素材来自 Picsum、MDN CC0 与本地生成音频。
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

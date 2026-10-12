@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>照片墙 | CrawlLab</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo-dot"></span>CrawlLab</div>
+    <nav class="nav">
+      <a href="/index.html">首页</a>
+      <a class="active" href="/photos.html">照片墙</a>
+      <a href="/videos.html">视频馆</a>
+      <a href="/audio.html">音乐库</a>
+      <a href="/api/media.json">JSON 接口</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Image Gallery</div>
+    <h1>12 张可批量下载的照片</h1>
+    <p class="lead">F12 选 <code>img.crawl-image</code> 或 <code>a.photo-download</code>，把 src / href 交给 Python 脚本循环下载。</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2>全部照片</h2>
+        <p class="lead">筛选按钮只改展示，不影响 DOM 里的真实地址。</p>
+      </div>
+      <div class="filters" id="photo-filters">
+        <button class="filter-btn active" data-filter="all" type="button">全部</button>
+        <button class="filter-btn" data-filter="nature" type="button">自然</button>
+        <button class="filter-btn" data-filter="animal" type="button">动物</button>
+        <button class="filter-btn" data-filter="city" type="button">城市</button>
+      </div>
+    </div>
+
+    <div class="grid" id="photo-list">
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p01">
+        <img class="thumb crawl-image" src="/media/images/photo-01.jpg" alt="高山河流" data-filename="photo-01.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">高山河流</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-01.jpg" download="photo-01.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p02">
+        <img class="thumb crawl-image" src="/media/images/photo-02.jpg" alt="云上公路" data-filename="photo-02.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">云上公路</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-02.jpg" download="photo-02.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="animal" data-id="p03">
+        <img class="thumb crawl-image" src="/media/images/photo-03.jpg" alt="午后小狗" data-filename="photo-03.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">午后小狗</h3>
+          <div class="meta"><span class="photo-tag">animal</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-03.jpg" download="photo-03.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p04">
+        <img class="thumb crawl-image" src="/media/images/photo-04.jpg" alt="森林瀑布" data-filename="photo-04.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">森林瀑布</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-04.jpg" download="photo-04.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p05">
+        <img class="thumb crawl-image" src="/media/images/photo-05.jpg" alt="山谷花海" data-filename="photo-05.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">山谷花海</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-05.jpg" download="photo-05.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="city" data-id="p06">
+        <img class="thumb crawl-image" src="/media/images/photo-06.jpg" alt="海岸线" data-filename="photo-06.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">海岸线</h3>
+          <div class="meta"><span class="photo-tag">city</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-06.jpg" download="photo-06.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="animal" data-id="p07">
+        <img class="thumb crawl-image" src="/media/images/photo-07.jpg" alt="深海水母" data-filename="photo-07.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">深海水母</h3>
+          <div class="meta"><span class="photo-tag">animal</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-07.jpg" download="photo-07.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="animal" data-id="p08">
+        <img class="thumb crawl-image" src="/media/images/photo-08.jpg" alt="草原狮王" data-filename="photo-08.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">草原狮王</h3>
+          <div class="meta"><span class="photo-tag">animal</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-08.jpg" download="photo-08.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="animal" data-id="p09">
+        <img class="thumb crawl-image" src="/media/images/photo-09.jpg" alt="海边海象" data-filename="photo-09.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">海边海象</h3>
+          <div class="meta"><span class="photo-tag">animal</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-09.jpg" download="photo-09.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p10">
+        <img class="thumb crawl-image" src="/media/images/photo-10.jpg" alt="雪峰晨光" data-filename="photo-10.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">雪峰晨光</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-10.jpg" download="photo-10.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p11">
+        <img class="thumb crawl-image" src="/media/images/photo-11.jpg" alt="风暴云层" data-filename="photo-11.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">风暴云层</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-11.jpg" download="photo-11.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+      <article class="media-card photo-card" data-type="photo" data-category="nature" data-id="p12">
+        <img class="thumb crawl-image" src="/media/images/photo-12.jpg" alt="山间湖泊" data-filename="photo-12.jpg">
+        <div class="card-body">
+          <h3 class="photo-title">山间湖泊</h3>
+          <div class="meta"><span class="photo-tag">nature</span><span>800x600</span></div>
+          <div class="card-actions">
+            <a class="download-link photo-download" href="/media/images/photo-12.jpg" download="photo-12.jpg">下载图片</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">选择器练习：document.querySelectorAll('img.crawl-image')</footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

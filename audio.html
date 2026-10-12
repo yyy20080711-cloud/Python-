@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音乐库 | CrawlLab</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo-dot"></span>CrawlLab</div>
+    <nav class="nav">
+      <a href="/index.html">首页</a>
+      <a href="/photos.html">照片墙</a>
+      <a href="/videos.html">视频馆</a>
+      <a class="active" href="/audio.html">音乐库</a>
+      <a href="/api/media.json">JSON 接口</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Audio Library</div>
+    <h1>音频批量下载练习</h1>
+    <p class="lead">F12 选 <code>audio.crawl-audio</code> 或表格里的下载链接。WAV 由本地生成，MP3 来自 MDN CC0。</p>
+  </section>
+
+  <section class="section">
+    <div class="audio-grid" id="audio-list">
+      <article class="media-card audio-card" data-type="audio" data-id="a01">
+        <h3 class="audio-title">T-Rex Roar</h3>
+        <audio class="crawl-audio" controls src="/media/audio/t-rex-roar.mp3" data-filename="t-rex-roar.mp3"></audio>
+        <div class="meta"><span>MP3</span><span>t-rex-roar.mp3</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/t-rex-roar.mp3" download="t-rex-roar.mp3">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a02">
+        <h3 class="audio-title">Dawn</h3>
+        <audio class="crawl-audio" controls src="/media/audio/track-01-dawn.wav" data-filename="track-01-dawn.wav"></audio>
+        <div class="meta"><span>WAV</span><span>track-01-dawn.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/track-01-dawn.wav" download="track-01-dawn.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a03">
+        <h3 class="audio-title">Forest</h3>
+        <audio class="crawl-audio" controls src="/media/audio/track-02-forest.wav" data-filename="track-02-forest.wav"></audio>
+        <div class="meta"><span>WAV</span><span>track-02-forest.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/track-02-forest.wav" download="track-02-forest.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a04">
+        <h3 class="audio-title">River</h3>
+        <audio class="crawl-audio" controls src="/media/audio/track-03-river.wav" data-filename="track-03-river.wav"></audio>
+        <div class="meta"><span>WAV</span><span>track-03-river.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/track-03-river.wav" download="track-03-river.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a05">
+        <h3 class="audio-title">Night</h3>
+        <audio class="crawl-audio" controls src="/media/audio/track-04-night.wav" data-filename="track-04-night.wav"></audio>
+        <div class="meta"><span>WAV</span><span>track-04-night.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/track-04-night.wav" download="track-04-night.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a06">
+        <h3 class="audio-title">Breeze</h3>
+        <audio class="crawl-audio" controls src="/media/audio/track-05-breeze.wav" data-filename="track-05-breeze.wav"></audio>
+        <div class="meta"><span>WAV</span><span>track-05-breeze.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/track-05-breeze.wav" download="track-05-breeze.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a07">
+        <h3 class="audio-title">Echo</h3>
+        <audio class="crawl-audio" controls src="/media/audio/track-06-echo.wav" data-filename="track-06-echo.wav"></audio>
+        <div class="meta"><span>WAV</span><span>track-06-echo.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/track-06-echo.wav" download="track-06-echo.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a08">
+        <h3 class="audio-title">Beep</h3>
+        <audio class="crawl-audio" controls src="/media/audio/sample-beep.wav" data-filename="sample-beep.wav"></audio>
+        <div class="meta"><span>WAV</span><span>sample-beep.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/sample-beep.wav" download="sample-beep.wav">下载音频</a>
+        </div>
+      </article>
+      <article class="media-card audio-card" data-type="audio" data-id="a09">
+        <h3 class="audio-title">Low Tone</h3>
+        <audio class="crawl-audio" controls src="/media/audio/sample-low.wav" data-filename="sample-low.wav"></audio>
+        <div class="meta"><span>WAV</span><span>sample-low.wav</span></div>
+        <div class="card-actions">
+          <a class="download-link audio-download" href="/media/audio/sample-low.wav" download="sample-low.wav">下载音频</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2>资源表</h2>
+        <p class="lead">适合用 <code>table.resource-table a</code> 做表格爬取。</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="resource-table" id="audio-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>标题</th>
+            <th>格式</th>
+            <th>地址</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-id="a01"><td>a01</td><td>T-Rex Roar</td><td>mp3</td><td><a href="/media/audio/t-rex-roar.mp3">t-rex-roar.mp3</a></td></tr>
+          <tr data-id="a02"><td>a02</td><td>Dawn</td><td>wav</td><td><a href="/media/audio/track-01-dawn.wav">track-01-dawn.wav</a></td></tr>
+          <tr data-id="a03"><td>a03</td><td>Forest</td><td>wav</td><td><a href="/media/audio/track-02-forest.wav">track-02-forest.wav</a></td></tr>
+          <tr data-id="a04"><td>a04</td><td>River</td><td>wav</td><td><a href="/media/audio/track-03-river.wav">track-03-river.wav</a></td></tr>
+          <tr data-id="a05"><td>a05</td><td>Night</td><td>wav</td><td><a href="/media/audio/track-04-night.wav">track-04-night.wav</a></td></tr>
+          <tr data-id="a06"><td>a06</td><td>Breeze</td><td>wav</td><td><a href="/media/audio/track-05-breeze.wav">track-05-breeze.wav</a></td></tr>
+          <tr data-id="a07"><td>a07</td><td>Echo</td><td>wav</td><td><a href="/media/audio/track-06-echo.wav">track-06-echo.wav</a></td></tr>
+          <tr data-id="a08"><td>a08</td><td>Beep</td><td>wav</td><td><a href="/media/audio/sample-beep.wav">sample-beep.wav</a></td></tr>
+          <tr data-id="a09"><td>a09</td><td>Low Tone</td><td>wav</td><td><a href="/media/audio/sample-low.wav">sample-low.wav</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">选择器练习：document.querySelectorAll('audio.crawl-audio')</footer>
+</body>
+</html>
