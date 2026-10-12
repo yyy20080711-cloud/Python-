@@ -2,35 +2,35 @@
   "site": "CrawlLab",
   "purpose": "python-crawler-practice",
   "photos": [
-    {"id": "p01", "title": "高山河流", "category": "nature", "src": "/media/images/photo-01.jpg", "filename": "photo-01.jpg"},
-    {"id": "p02", "title": "云上公路", "category": "nature", "src": "/media/images/photo-02.jpg", "filename": "photo-02.jpg"},
-    {"id": "p03", "title": "午后小狗", "category": "animal", "src": "/media/images/photo-03.jpg", "filename": "photo-03.jpg"},
-    {"id": "p04", "title": "森林瀑布", "category": "nature", "src": "/media/images/photo-04.jpg", "filename": "photo-04.jpg"},
-    {"id": "p05", "title": "山谷花海", "category": "nature", "src": "/media/images/photo-05.jpg", "filename": "photo-05.jpg"},
-    {"id": "p06", "title": "海岸线", "category": "city", "src": "/media/images/photo-06.jpg", "filename": "photo-06.jpg"},
-    {"id": "p07", "title": "深海水母", "category": "animal", "src": "/media/images/photo-07.jpg", "filename": "photo-07.jpg"},
-    {"id": "p08", "title": "草原狮王", "category": "animal", "src": "/media/images/photo-08.jpg", "filename": "photo-08.jpg"},
-    {"id": "p09", "title": "海边海象", "category": "animal", "src": "/media/images/photo-09.jpg", "filename": "photo-09.jpg"},
-    {"id": "p10", "title": "雪峰晨光", "category": "nature", "src": "/media/images/photo-10.jpg", "filename": "photo-10.jpg"},
-    {"id": "p11", "title": "风暴云层", "category": "nature", "src": "/media/images/photo-11.jpg", "filename": "photo-11.jpg"},
-    {"id": "p12", "title": "山间湖泊", "category": "nature", "src": "/media/images/photo-12.jpg", "filename": "photo-12.jpg"}
+    {"id": "p01", "title": "高山河流", "category": "nature", "src": "media/images/photo-01.jpg", "filename": "photo-01.jpg"},
+    {"id": "p02", "title": "云上公路", "category": "nature", "src": "media/images/photo-02.jpg", "filename": "photo-02.jpg"},
+    {"id": "p03", "title": "午后小狗", "category": "animal", "src": "media/images/photo-03.jpg", "filename": "photo-03.jpg"},
+    {"id": "p04", "title": "森林瀑布", "category": "nature", "src": "media/images/photo-04.jpg", "filename": "photo-04.jpg"},
+    {"id": "p05", "title": "山谷花海", "category": "nature", "src": "media/images/photo-05.jpg", "filename": "photo-05.jpg"},
+    {"id": "p06", "title": "海岸线", "category": "city", "src": "media/images/photo-06.jpg", "filename": "photo-06.jpg"},
+    {"id": "p07", "title": "深海水母", "category": "animal", "src": "media/images/photo-07.jpg", "filename": "photo-07.jpg"},
+    {"id": "p08", "title": "草原狮王", "category": "animal", "src": "media/images/photo-08.jpg", "filename": "photo-08.jpg"},
+    {"id": "p09", "title": "海边海象", "category": "animal", "src": "media/images/photo-09.jpg", "filename": "photo-09.jpg"},
+    {"id": "p10", "title": "雪峰晨光", "category": "nature", "src": "media/images/photo-10.jpg", "filename": "photo-10.jpg"},
+    {"id": "p11", "title": "风暴云层", "category": "nature", "src": "media/images/photo-11.jpg", "filename": "photo-11.jpg"},
+    {"id": "p12", "title": "山间湖泊", "category": "nature", "src": "media/images/photo-12.jpg", "filename": "photo-12.jpg"}
   ],
   "videos": [
-    {"id": "v01", "title": "CC0 花朵特写", "src": "/media/videos/flower.mp4", "filename": "flower.mp4"},
-    {"id": "v02", "title": "花朵 WebM", "src": "/media/videos/flower.webm", "filename": "flower.webm"},
-    {"id": "v03", "title": "兔子短片 MP4", "src": "/media/videos/rabbit.mp4", "filename": "rabbit.mp4"},
-    {"id": "v04", "title": "兔子短片 WebM", "src": "/media/videos/rabbit.webm", "filename": "rabbit.webm"},
-    {"id": "v05", "title": "5 秒测试片", "src": "/media/videos/sample-5s.mp4", "filename": "sample-5s.mp4"}
+    {"id": "v01", "title": "CC0 花朵特写", "src": "media/videos/flower.mp4", "filename": "flower.mp4"},
+    {"id": "v02", "title": "花朵 WebM", "src": "media/videos/flower.webm", "filename": "flower.webm"},
+    {"id": "v03", "title": "兔子短片 MP4", "src": "media/videos/rabbit.mp4", "filename": "rabbit.mp4"},
+    {"id": "v04", "title": "兔子短片 WebM", "src": "media/videos/rabbit.webm", "filename": "rabbit.webm"},
+    {"id": "v05", "title": "5 秒测试片", "src": "media/videos/sample-5s.mp4", "filename": "sample-5s.mp4"}
   ],
   "audio": [
-    {"id": "a01", "title": "T-Rex Roar", "src": "/media/audio/t-rex-roar.mp3", "filename": "t-rex-roar.mp3"},
-    {"id": "a02", "title": "Dawn", "src": "/media/audio/track-01-dawn.wav", "filename": "track-01-dawn.wav"},
-    {"id": "a03", "title": "Forest", "src": "/media/audio/track-02-forest.wav", "filename": "track-02-forest.wav"},
-    {"id": "a04", "title": "River", "src": "/media/audio/track-03-river.wav", "filename": "track-03-river.wav"},
-    {"id": "a05", "title": "Night", "src": "/media/audio/track-04-night.wav", "filename": "track-04-night.wav"},
-    {"id": "a06", "title": "Breeze", "src": "/media/audio/track-05-breeze.wav", "filename": "track-05-breeze.wav"},
-    {"id": "a07", "title": "Echo", "src": "/media/audio/track-06-echo.wav", "filename": "track-06-echo.wav"},
-    {"id": "a08", "title": "Beep", "src": "/media/audio/sample-beep.wav", "filename": "sample-beep.wav"},
-    {"id": "a09", "title": "Low Tone", "src": "/media/audio/sample-low.wav", "filename": "sample-low.wav"}
+    {"id": "a01", "title": "T-Rex Roar", "src": "media/audio/t-rex-roar.mp3", "filename": "t-rex-roar.mp3"},
+    {"id": "a02", "title": "Dawn", "src": "media/audio/track-01-dawn.wav", "filename": "track-01-dawn.wav"},
+    {"id": "a03", "title": "Forest", "src": "media/audio/track-02-forest.wav", "filename": "track-02-forest.wav"},
+    {"id": "a04", "title": "River", "src": "media/audio/track-03-river.wav", "filename": "track-03-river.wav"},
+    {"id": "a05", "title": "Night", "src": "media/audio/track-04-night.wav", "filename": "track-04-night.wav"},
+    {"id": "a06", "title": "Breeze", "src": "media/audio/track-05-breeze.wav", "filename": "track-05-breeze.wav"},
+    {"id": "a07", "title": "Echo", "src": "media/audio/track-06-echo.wav", "filename": "track-06-echo.wav"},
+    {"id": "a08", "title": "Beep", "src": "media/audio/sample-beep.wav", "filename": "sample-beep.wav"},
+    {"id": "a09", "title": "Low Tone", "src": "media/audio/sample-low.wav", "filename": "sample-low.wav"}
   ]
 }

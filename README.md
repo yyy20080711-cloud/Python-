@@ -10,6 +10,19 @@
 - `/audio.html` 9 段音频 + 资源表，选择器 `audio.crawl-audio`、`table.resource-table a`
 - `/api/media.json` JSON 接口，适合练接口解析
 
+## GitHub Pages 访问
+
+仓库已推到 `main`。当前环境没有开启 Pages 的管理员权限，需要你在 GitHub 网页上点一次：
+
+1. 打开 https://github.com/yyy20080711-cloud/Python-/settings/pages
+2. Source 选 `Deploy from a branch`
+3. Branch 选 `main`，目录选 `/ (root)`
+4. 点 Save
+
+几分钟后打开：
+
+https://yyy20080711-cloud.github.io/Python-/
+
 ## 本地启动
 
 ```bash
